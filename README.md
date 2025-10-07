@@ -34,9 +34,8 @@ with [FrankenPHP](https://frankenphp.dev) and [Caddy](https://caddyserver.com/) 
 - api_login_check: /api/login - Login agents
 - report_create: /api/report - Creating reports—storing in DB and to the json file
 ## Authenticated Endpoints
-- agent_witness_reports_create: /api/agent/witness-reports
-- agent_witness_reports_index: /api/agent/witness-reports
-- agent_witness_reports_show: /api/agent/witness-reports/{id}
-- agent_witness_reports_process: /api/agent/witness-reports/{id}/process
+- agent_witness_reports_index: /api/agent/witness-reports GET
+- agent_witness_reports_show: /api/agent/witness-reports/{id} GET
+- agent_witness_reports_process: /api/agent/witness-reports/{id}/process PUT|PATCH
 
 **Enjoy!**
