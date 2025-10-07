@@ -1,0 +1,28 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_login_check:
+    path: /api/login
+
+report_create:
+    path: /api/report
+    controller: App\Controller\ReportController::create
+    methods: [POST]
+
+agent_witness_reports_index:
+    path: /api/agent/witness-reports
+    controller: App\Controller\AgentWitnessReportController::index
+    methods: [GET]
+
+agent_witness_reports_show:
+    path: /api/agent/witness-reports/{id}
+    controller: App\Controller\AgentWitnessReportController::show
+    methods: [GET]
+
+agent_witness_reports_process:
+    path: /api/agent/witness-reports/{id}/process
+    controller: App\Controller\AgentWitnessReportController::process
+    methods: [PUT, PATCH]
