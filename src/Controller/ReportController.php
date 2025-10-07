@@ -1,19 +1,14 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Controller;
 
 use App\Dto\CreateReportDto;
-use App\Entity\WitnessReport;
-use App\Service\CountryResolverService;
-use App\Service\WitnessReportFileService;
 use App\Service\WitnessReportService;
-use App\ValueObject\Phone;
-use App\ValueObject\IpAddress;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 

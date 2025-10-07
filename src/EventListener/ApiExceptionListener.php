@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\EventListener;
 
@@ -9,7 +10,7 @@ use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 
 #[AsEventListener(event: 'kernel.exception', method: 'onKernelException')]
-class ApiExceptionListener
+final class ApiExceptionListener
 {
     public function onKernelException(ExceptionEvent $event): void
     {

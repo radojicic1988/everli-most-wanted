@@ -1,6 +1,6 @@
 <?php
+declare(strict_types=1);
 
-# src/Security/UserProvider.php
 namespace App\Security;
 
 use App\Entity\User;
